@@ -37,18 +37,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/percolation" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Insertion">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
     <configuration name="Insertion" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Insertion" />
+      <module name="CLSR" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeIntegers" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeIntegers" />
       <module name="CLSR" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -70,26 +79,35 @@
     </configuration>
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="820" key="FileChooserDialogImpl" timestamp="1596574549650">
-      <screen x="0" y="0" width="3840" height="2130" />
+    <state x="421" y="819" key="FileChooserDialogImpl" timestamp="1597135250931">
+      <screen x="0" y="0" width="3840" height="2128" />
     </state>
+    <state x="421" y="819" key="FileChooserDialogImpl/0.0.3840.2128@0.0.3840.2128" timestamp="1597135250931" />
     <state x="421" y="820" key="FileChooserDialogImpl/0.0.3840.2130/-1920.1250.1920.1050@0.0.3840.2130" timestamp="1596574549650" />
-    <state width="1267" height="646" key="GridCell.Tab.0.bottom" timestamp="1596587184398">
-      <screen x="0" y="0" width="3840" height="2130" />
+    <state width="1267" height="645" key="GridCell.Tab.0.bottom" timestamp="1597136258144">
+      <screen x="0" y="0" width="3840" height="2128" />
     </state>
+    <state width="1267" height="645" key="GridCell.Tab.0.bottom/0.0.3840.2128@0.0.3840.2128" timestamp="1597136258144" />
     <state width="1267" height="646" key="GridCell.Tab.0.bottom/0.0.3840.2130/-1920.1250.1920.1050@0.0.3840.2130" timestamp="1596587184398" />
-    <state width="1267" height="646" key="GridCell.Tab.0.center" timestamp="1596587184398">
-      <screen x="0" y="0" width="3840" height="2130" />
+    <state width="1267" height="645" key="GridCell.Tab.0.center" timestamp="1597136258144">
+      <screen x="0" y="0" width="3840" height="2128" />
     </state>
+    <state width="1267" height="645" key="GridCell.Tab.0.center/0.0.3840.2128@0.0.3840.2128" timestamp="1597136258144" />
     <state width="1267" height="646" key="GridCell.Tab.0.center/0.0.3840.2130/-1920.1250.1920.1050@0.0.3840.2130" timestamp="1596587184398" />
-    <state width="1267" height="646" key="GridCell.Tab.0.left" timestamp="1596587184398">
-      <screen x="0" y="0" width="3840" height="2130" />
+    <state width="1267" height="645" key="GridCell.Tab.0.left" timestamp="1597136258144">
+      <screen x="0" y="0" width="3840" height="2128" />
     </state>
+    <state width="1267" height="645" key="GridCell.Tab.0.left/0.0.3840.2128@0.0.3840.2128" timestamp="1597136258144" />
     <state width="1267" height="646" key="GridCell.Tab.0.left/0.0.3840.2130/-1920.1250.1920.1050@0.0.3840.2130" timestamp="1596587184398" />
-    <state width="1267" height="646" key="GridCell.Tab.0.right" timestamp="1596587184398">
-      <screen x="0" y="0" width="3840" height="2130" />
+    <state width="1267" height="645" key="GridCell.Tab.0.right" timestamp="1597136258144">
+      <screen x="0" y="0" width="3840" height="2128" />
     </state>
+    <state width="1267" height="645" key="GridCell.Tab.0.right/0.0.3840.2128@0.0.3840.2128" timestamp="1597136258144" />
     <state width="1267" height="646" key="GridCell.Tab.0.right/0.0.3840.2130/-1920.1250.1920.1050@0.0.3840.2130" timestamp="1596587184398" />
+    <state x="511" y="641" key="SettingsEditor" timestamp="1597136256066">
+      <screen x="0" y="0" width="3840" height="2128" />
+    </state>
+    <state x="511" y="641" key="SettingsEditor/0.0.3840.2128@0.0.3840.2128" timestamp="1597136256066" />
     <state x="790" y="814" width="672" height="678" key="search.everywhere.popup" timestamp="1597112068620">
       <screen x="0" y="0" width="3840" height="2128" />
     </state>

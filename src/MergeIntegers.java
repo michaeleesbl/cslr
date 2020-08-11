@@ -1,38 +1,41 @@
-import java.util.Arrays;
-
 public class MergeIntegers {
     private MergeIntegers() {
     }
 
-    public static void sort(Double[] a, int p, int r) {
-        if (p < r) {
-            int q = (p + r) / 2;
-            sort(a, p, q);
-            sort(a, q, r);
-            merge(a, p, q, r);
-        }
+    public static void sort(int[] a, int[] aux, int lo, int hi) {
+        if (hi <= lo) return;
+        int mid = lo + (hi - lo) / 2;
+        sort(a, aux, lo, mid);
+        sort(a, aux, mid + 1, hi);
+        merge(a, aux, lo, mid, hi);
     }
 
-    private static void merge(Double[] a, int p, int q, int r) {
-        int n1 = q - p;
-        int n2 = r - q - 1;
-        Double[] L = Arrays.copyOfRange(a, 0, n1);
-        Double[] R = Arrays.copyOfRange(a, 0, n2);
-        if (n1 >= 0) System.arraycopy(a, p - 1, L, 0, n1);
-        if (n2 >= 0) System.arraycopy(a, q, R, 0, n2);
-        L[n1] = Double.POSITIVE_INFINITY;
-        R[n2] = Double.POSITIVE_INFINITY;
-        int i = 0;
-        int j = 0;
-        for (int k = p - 1; k < r; k++) {
-            if (L[i] <= R[j]) {
-                a[k] = L[i];
-                i++;
-            } else {
-                a[k] = R[j];
-                j++;
-            }
+    private static void merge(int[] a, int[] aux, int lo, int mid, int hi) {
+        // precondition check
+        assert isSorted(a, lo, mid);
+        assert isSorted(a, mid + 1, hi);
+
+        // copy to aux
+        for (int k = lo; k <= hi; k++) {
+            aux[k] = a[k];
         }
+
+        // merge step
+        int i = lo, j = mid + 1;
+        for (int k = lo; k <= hi; k++) {
+            if (i > mid) a[k] = aux[j++];
+            else if (j > hi) a[k] = aux[j++];
+            else if (aux[j] < aux[i]) a[k] = aux[j++];
+            else a[k] = aux[i++];
+        }
+
+        // postcheck
+        assert isSorted(a, lo, hi);
     }
 
+    private static boolean isSorted(int[] a, int lo, int hi) {
+        for (int i = lo + 1; i <= hi; i++)
+            if (a[i] < a[i - 1]) return false;
+        return true;
+    }
 }
